@@ -30,12 +30,15 @@ header{
 #navbar li{
     position:relative;
     width: 100%;
+    border-top: 1px solid;
 }
 
 #navbar a {
     display: block;
     padding: 10px 30px;
-    color:dimgrey
+    color:dimgrey;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   #main-doc{
