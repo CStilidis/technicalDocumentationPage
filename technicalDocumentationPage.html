@@ -8,19 +8,19 @@
     <body>
         <nav id="navbar">
             <header>
-                Java Documentation
+                CSS Tutorial
             </header>
             <ul>
-                <li><a class="nav-link" href="#description_1">Description 1</a></li>
-                <li><a class="nav-link" href="#description_2">Description 2</a></li>
-                <li><a class="nav-link" href="#description_3">Description 3</a></li>
-                <li><a class="nav-link" href="#description_4">Description 4</a></li>
-                <li><a class="nav-link" href="#description_5">Description 5</a></li>
-                <li><a class="nav-link" href="#description_6">Description 6</a></li>
-                <li><a class="nav-link" href="#description_7">Description 7</a></li>
-                <li><a class="nav-link" href="#description_8">Description 8</a></li>
-                <li><a class="nav-link" href="#description_9">Description 9</a></li>
-                <li><a class="nav-link" href="#description_10">Description 10</a></li>
+                <li><a class="nav-link" href="#description_1">CSS Introduction</a></li>
+                <li><a class="nav-link" href="#description_2">CSS Syntax</a></li>
+                <li><a class="nav-link" href="#description_3">CSS Selectors</a></li>
+                <li><a class="nav-link" href="#description_4">CSS Comments</a></li>
+                <li><a class="nav-link" href="#description_5">CSS Colors</a></li>
+                <li><a class="nav-link" href="#description_6">CSS Backgrounds</a></li>
+                <li><a class="nav-link" href="#description_7">CSS Borders</a></li>
+                <li><a class="nav-link" href="#description_8">CSS Margins</a></li>
+                <li><a class="nav-link" href="#description_9">CSS Padding</a></li>
+                <li><a class="nav-link" href="#description_10">CSS Fonts</a></li>
                 <li><a class="nav-link" href="#description_11">Description 11</a></li>
                 <li><a class="nav-link" href="#description_12">Description 12</a></li>
                 <li><a class="nav-link" href="#description_13">Description 13</a></li>
@@ -30,93 +30,147 @@
         </nav>
         <main id="main-doc">
             <section class="main-section" id="description_1">
-                <header >Description 1</header>
+                <header >CSS Introduction</header>
                 <article>
-                    <p>Paragraph1</p>
+                    <p>What is CSS?</p>
                     <ul>
-                        <li><p>Paragraph1</p></li>
+                        <li><p>CSS stands for Cascading Style Sheets</p></li>
+                        <li><p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</p></li>
+                        <li><p>CSS saves a lot of work. It can control the layout of multiple web pages all at once</p></li>
+                        <li><p>External stylesheets are stored in CSS files</p></li>
                     </ul>
-                    <p>Paragraph1</p>
                 </article>
             </section>
             <section class="main-section" id="description_2">
                 <article>
-                    <header >Description 2</header>
-                    <p>Paragraph2</p>
-                    <code>code2</code>
-                    <p>Paragraph2</p>
+                    <header >CSS Syntax</header>
+                    <p>A CSS rule-set consists of a selector and a declaration block:</p>
+                    <code>
+                        p {color: red;text-align: center;}
+                    </code>
+                    <p>In this example all elements will be center-aligned, with a red text color:</p>
+                    <ul>
+                        <li><p>p is a selector in CSS (it points to the HTML element you want to style: <p>).</p></li>
+                        <li><p>color is a property, and red is the property value</p></li>
+                        <li><p>text-align is a property, and center is the property value</p></li>
+                    </ul>
                 </article>
             </section>
             <section class="main-section" id="description_3">
-                <header >Description 3</header>
+                <header >CSS Selectors</header>
                 <article>
-                    <p>Paragraph3</p>
+                    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.
+                    We can divide CSS selectors into five categories:</p>
                     <ul>
-                        <li><p>Paragraph3</p></li>
+                        <li><p>Simple selectors (select elements based on name, id, class)</p></li>
+                        <li><p>Combinator selectors (select elements based on a specific relationship between them)</p></li>
+                        <li><p>Pseudo-class selectors (select elements based on a certain state)</p></li>
+                        <li><p>Pseudo-elements selectors (select and style a part of an element)</p></li>
+                        <li><p>Attribute selectors (select elements based on an attribute or attribute value)</p></li>
                     </ul>
-                    <p>Paragraph3</p>
                 </article>
             </section>
             <section class="main-section" id="description_4"> 
-                <header >Description 4</header>
+                <header >CSS Comments</header>
                 <article>
-                    <p>Paragraph4</p>
-                    <code>code4</code>
-                    <p>Paragraph4</p>
+                    <p>Comments are used to explain the code, and may help when you edit the source code at a later date.<br>
+                        Comments are ignored by browsers.<br>
+                        A CSS comment is placed inside the style element, and starts with /* and ends with */:</p>
+                    <code>/* This is a single-line comment */
+                        p {
+                          color: red;
+                        }</code>
+                    <p>You can add comments wherever you want in the code</p>
                 </article>
             </section>
             <section class="main-section" id="description_5">
                 <article>
-                    <header id="description_5">Description 5</header>
-                    <p>Paragraph5</p>
+                    <header id="description_5">CSS Colors</header>
+                    <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+                    <p>You can set the background color for HTML elements:</p>
                     <ul>
-                        <li><p>Paragraph5</p></li>
+                        <li>h1 style="background-color:DodgerBlue;">Hello World /h1</li>
+                        <li>p style="background-color:Tomato;">Lorem ipsum... /p</li>
                     </ul>
-                    <p>Paragraph5</p>
                 </article>
             </section>
             <section class="main-section" id="description_6">
                 <article>
-                    <header id="description_6">Description 6</header>
-                    <p>Paragraph6</p>
-                    <code>code6</code>
-                    <p>Paragraph6</p>
+                    <header id="description_6">CSS Backgrounds</header>
+                    <p>The CSS background properties are used to define the background effects for elements.</p>
+                    <p>In these chapters, you will learn about the following CSS background properties:</p>
+                    <ul>
+                        <li>background-color</li>
+                        <li>background-image</li>
+                        <li>background-repeat</li>
+                        <li>background-attachment</li>
+                        <li>background-position</li>
+                    </ul>
+                    <p>The background-color property specifies the background color of an element.</p>
+                    <code>
+                        body {
+                            background-color: lightblue;
+                          }
+                    </code>
                 </article>
             </section>
             <section class="main-section" id="description_7">
                 <article>
-                    <header id="description_7">Description 7</header>
-                    <p>Paragraph7</p>
+                    <header id="description_7">CSS Borders</header>
+                    <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+                    <p>CSS Border Style</p>
                     <ul>
-                        <li><p>Paragraph7</p></li>
+                        <li><code>dotted</code></li>
+                        <li><code>solid</code></li>
+                        <li><code>double</code></li>
+                        <li><code>dashed</code></li>
+                        
                     </ul>
-                    <p>Paragraph7</p>
+                    <p>The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
                 </article>
             </section>
             <section class="main-section" id="description_8">
                 <article>
-                    <header id="description_8">Description 8</header>
-                    <p>Paragraph8</p>
-                    <code>code8</code>
-                    <p>Paragraph8</p>
+                    <header id="description_8">CSS Margins</header>
+                    <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+                    <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+                    <p>Margin - Individual Sides</p>
+                    <ul>
+                        <li><code>margin-top</code></li>
+                        <li><code>margin-right</code></li>
+                        <li><code>margin-bottom</code></li>
+                        <li><code>margin-left</code></li>
+                    </ul>                    
                 </article>
             </section>
             <section class="main-section" id="description_9">
                 <article>
-                    <header id="description_9">Description 9</header>
-                    <p>Paragraph9</p>
+                    <header id="description_9">CSS Padding</header>
+                    <p>The CSS <code>padding</code> properties are used to generate space around an element's content, inside of any defined borders.</p>
+                    <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+                    <p>Padding - Individual Sides</p>
                     <ul>
-                        <li><p>Paragraph9</p></li>
+                        <li><code>padding-top</code></li>
+                        <li><code>padding-right</code></li>
+                        <li><code>padding-bottom</code></li>
+                        <li><code>padding-left</code></li>
                     </ul>
-                    <p>Paragraph9</p>
                 </article>
             </section>
             <section class="main-section" id="description_10">
                 <article>
-                    <header id="description_10">Description 10</header>
-                    <p>Paragraph10</p>
-                    <code>code10</code>
-                    <p>Paragraph10</p>
+                    <header id="description_10">CSS Fonts</header>
+                    <p>Choosing the right font for your website is important!</p>
+                    <p>The right font can create a strong identity for your brand.</p>
+                    <p>Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.</p>
+                    <p>Generic Font Families</p>
+                    <ul>
+                        <li><p>Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.</p></li>
+                        <li><p>Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.</p></li>
+                        <li><p>Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. </p></li>
+                        <li><p>Cursive fonts imitate human handwriting.</p></li>
+                        <li><p>Fantasy fonts are decorative/playful fonts.</p></li>
+                    </ul>
                 </article>
             </section>
             <section class="main-section" id="description_11">
