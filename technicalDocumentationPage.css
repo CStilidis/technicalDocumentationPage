@@ -1,0 +1,22 @@
+html, body{
+    line-height: 1.5;
+}
+
+header{
+    font-size: 1.6em;
+    
+}
+
+#navbar{
+    position:fixed;
+    height: 100%;
+    width: 310px;
+    min-width: 290px;
+}
+
+#main-doc{
+    postiion: absolute;
+    margin-left: 310px;
+}
+
+
